@@ -1,0 +1,270 @@
+/* 
+#1B325E - SPACE CADET
+#1FBBB0 - LIGHT SEA GREEN
+#FAA91A - BRIGHT YELLOW (CRAYOLA)
+#F05323 - FLAME
+#2991CF - RICH ELECTRIC BLUE
+*/
+
+body, html {
+    height: 100%;
+    font-family: sans-serif;
+    background: white;
+    
+  }
+
+  .form_registro{
+    
+    
+    width: 100%;
+    
+    top: 130px;
+    position: relative;
+    /* float: left; */
+    margin: auto;
+    display: block;
+  }
+  #Titulo_principal{
+    color: #F28705;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .form {
+    margin: auto;
+    padding: 5px;
+    max-width: 300px;
+    position: relative;
+    top: 30%;
+    /*transform: translateY(-50%);*/
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 2px #F20574;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+  }
+  
+  .form h1{
+    text-align: center;
+    margin: 20px 0 35px 0;
+    color: #F20574;
+    text-shadow: 1px 3px rgba(255, 255, 255, 0.1);
+  }
+  
+  .form-group {
+    margin: 2px 2px;
+    max-width: 100%;
+    min-height: 68px;
+    margin: 10px 0 0 0;
+    padding: 0 35px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .banner{
+    margin: 2px 2px;
+    max-width: 100%;
+    min-height: 68px;
+    margin: 10px 0 0 0;
+    padding: 0 35px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .banner label{
+    pointer-events: none;
+    position: absolute;
+    margin: 0;
+    padding: 0 2px;
+    top: -27px;
+    left: 47px;
+    font-size: 16px;
+    color: #F28705;
+    transition: all 0.12s ease;
+  }
+
+  .banner select {
+    width: 100%;
+    box-sizing: border-box;
+    height: 38px;
+    padding: 0 12px;
+    font-size: 17px;
+    letter-spacing: 0.25px;
+    border-radius: 4px;
+    border: 1.5px solid #F20574;
+    background-color: white;
+    
+    color: #F28705;
+  }
+  
+  .form-group input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 38px;
+    padding: 0 12px;
+    font-size: 17px;
+    letter-spacing: 0.25px;
+    border-radius: 4px;
+    border: 1.5px solid #F20574;
+    background-color: white;
+    
+    color: #F28705;
+  }
+  
+  .form-group input:active,
+  .form-group input:focus {
+    background-color: white;
+    outline: none;
+    box-shadow: 0 0 2px 0 #F28705;
+    border: 1.5px solid #F28705;
+    color: #F28705;
+  }
+  
+  .form-group input::selection {
+    background-color: rgb(250, 95, 180);
+  }
+  
+  .form-group label{
+    pointer-events: none;
+    position: absolute;
+    margin: 0;
+    padding: 0 2px;
+    top: 9px;
+    left: 47px;
+    font-size: 16px;
+    color: #F28705;
+    transition: all 0.12s ease;
+  }
+  
+  .form-group input:focus + label,
+  .form-group input:not(:placeholder-shown) + label{
+    transform: translateY(-27px);
+    font-size: 14px;
+    font-weight: bold;
+    color: #F28705;
+  }
+  
+  .error{
+    color: rgb(255, 102, 102);
+    margin: 3px 0px 0px 12px;
+    font-size: 12.5px;
+    display: none;
+    letter-spacing: 0px;
+  }
+  
+  .form input[type="submit"]{
+    display: block;
+    margin: 20px auto 10px;
+    width: 110px;
+    height: 45px;
+    border-radius: 4px;
+    font-size: 17px;
+    border: none;
+    text-transform: capitalize;
+    background-color: #93A603;
+    color: white;
+    cursor: auto;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .form input[type="submit"]:hover,
+  .form input[type="submit"]:focus{
+    background-color: #F28705;
+    box-shadow: 0 0 2px 0px #2991CF;
+  }
+  
+  .form-bottom {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 12px;
+    letter-spacing: 0.75px;
+  }
+  
+  .form-bottom a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .form-bottom a:hover,
+  .form-bottom a:focus{
+    color: #F28705;
+    outline: none;
+  }
+  .form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    height: 38px;
+    padding: 0 12px;
+    font-size: 17px;
+    letter-spacing: 0.25px;
+    border-radius: 4px;
+    border: 1.5px solid #F20574;
+    background-color: white;
+    
+    color: #F28705;
+  }
+  
+  .form-group textarea{ 
+    width: 100%;
+    box-sizing: border-box;
+    height: 150px;
+    padding: 0 12px;
+    font-size: 17px;
+    letter-spacing: 0.25px;
+    border-radius: 4px;
+    border: 1.5px solid #F20574;
+    background-color: white;
+    margin-bottom: 25px;
+    color: #F28705;
+  }
+  .form-group textarea:focus + label,
+  .form-group textarea:not(:placeholder-shown) + label{
+    transform: translateY(-27px);
+    font-size: 14px;
+    font-weight: bold;
+    color: #F28705;
+  }
+
+  .form-group textarea:active,
+  .form-group textarea:focus {
+    background-color: white;
+    outline: none;
+    box-shadow: 0 0 2px 0 #F28705;
+    border: 1.5px solid #F28705;
+    color: #F28705;
+  }
+
+  .oferta{
+    width: 100%;
+    box-sizing: border-box;
+    height: 150px;
+    padding: 0 12px;
+    font-size: 17px;
+    letter-spacing: 0.25px;
+    border-radius: 4px;
+    border: 1.5px solid white;
+    background-color: white;
+    margin-bottom: 25px;
+    color: #F28705;
+  }
+
+  .form-group input[type='checkbox']{
+    width: 20px;
+    right: 25%;
+    position:absolute;
+  }
+
+  @media all and (max-width : 900px){
+    .form {
+      margin: auto;
+      padding: 5px;
+      max-width: 300px;
+      position: relative;
+     
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 20px 2px #F20574;
+      letter-spacing: 0.5px;
+      margin-bottom: 15px;
+    }
+
+  }

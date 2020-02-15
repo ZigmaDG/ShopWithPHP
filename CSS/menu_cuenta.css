@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+
+
+.menu_cuenta{
+    position: relative;
+    width: 15%;
+    height: 70%;
+    /* padding: 0px; */
+   
+    top: 110px;
+    display: block;
+    float: left;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+   
+}
+
+.menu_cuenta2{
+    position: relative;
+    width: 15%;
+    height: 70%;
+    /* padding: 0px; */
+   
+    top: 110px;
+    display: none;
+    float: left;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+   
+}
+
+
+
+.menu_cuenta a{
+    
+    color: black;
+    display: block;
+    padding: 21px;
+    /* font-size: 10px; */
+    text-decoration: none;
+}  
+
+.menu_cuenta a>i{
+margin-right: 5px;
+} 
+.opcion{
+    position: relative;
+    width: 84%;
+    height: 100%;
+   
+    top: 130px;
+    float: left
+}
+
+
+
+.menu_cuenta2 a{
+    
+    color: black;
+    display: block;
+    padding: 21px;
+    /* font-size: 10px; */
+    text-decoration: none;
+}  
+
+.menu_cuenta2 a>i{
+margin-right: 5px;
+} 
+@media only screen and (max-width: 600px){
+    .menu_cuenta{
+    display:none;
+    }.menu_cuenta2{display: block;}}
+  

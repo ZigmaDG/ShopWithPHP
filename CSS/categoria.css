@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+
+.producto_cat{
+   
+
+    width: 350px;
+    height: 250px;
+
+    display: inline;
+}
+.lista {
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 5rem 0;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+body{
+    background-color: #F2EEF1;
+}
+
+.img_container{
+    height: 100%;
+    width: 200px;
+    float: left;
+  
+}
+.img_container > a> img{
+    height: 100%;
+    width: 100%;
+}
+
+.desc_container{
+    background-color: #F2EEF1;
+    float: left;
+    height: 100%;
+    width: 76%;
+    border-left: 2px solid #F20574;
+    font-size: calc(0.5em + 1vw);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.desc_container>p{
+    text-align: left;
+    margin-left: 10px;
+    
+}
+#Titulo_principal {
+    color: #F28705;
+    margin-top: 125px;
+    margin-bottom: 10px;
+    font-size: calc(2em + 1vw);
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+.desc_container>p>a{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.desc_container>.categoria{
+    font-size: 10px;
+    color: #F27405;
+    font-weight: bold;
+}
+.desc_container>.precio{
+    position: absolute;
+    bottom: 0;
+    
+    font-weight: bold;
+}
+
+
+.paginacion{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 80%;
+    float: left;
+    height: 50px;
+   
+    position: relative;
+}
+.lista > div {
+    width: 100%;
+    float: left;
+    height: 200px;
+    margin: 1%;
+    position: relative;
+  }
+  .contenedor_productos{
+    margin-top: 150px;
+  }
+
+@media only screen and (max-width: 900px){
+    .desc_container{
+        background-color: #F2EEF1;
+        float: left;
+        height: 100%;
+        width:59%;
+        border-left: 2px solid #F20574;
+        font-size: calc(0.5em + 1vw);
+        font-family: 'Open Sans', sans-serif;
+    }
+    .img_container{
+        height: 100%;
+        width:40%;
+        float: left;
+      
+}}

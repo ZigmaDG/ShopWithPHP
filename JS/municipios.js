@@ -1,0 +1,16 @@
+
+var municipios = {
+                "AGUASCALIENTES":[
+                        "Aguascalientes",
+                        "Asientos",
+                        "Calvillo",
+                        "Cosío",
+                        "El Llano",
+                        "Jesús María",
+                        "Pabellón de Arteaga",
+                        "Rincón de Romos",
+                        "San Francisco de los Romo",
+                        "San José de Gracia",
+                        "Tepezalá"
+                    ]
+            }

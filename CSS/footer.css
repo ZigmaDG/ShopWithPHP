@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+.footer {
+   margin-top: 50px;
+    font-family: "Lato", sans-serif;
+  /* position: absolute;*/
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    height: 150px;
+    font-size:10px;
+  }
+
+  .footer a{
+      color: #F20574;
+      
+  }
+  .footer i{
+      color:#F20574;
+      margin: 30;
+  }
+
+  .footer i:hover{
+    color: #F28705;
+  }
+
+  .section{
+    float: left;
+    width: 33%;
+    text-align: center;
+  }
+
+  .section ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .section h3 {
+    
+  }

@@ -1,0 +1,193 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+.container{
+    width: 100%;
+    height: 100%;
+  
+    top: 150px;
+}
+
+
+.logoheart{
+	position: absolute;
+    top: 50%;
+    float: left;
+    width: 500px;
+    margin-left: -10px;
+    height: 300px;
+    margin-top: -150px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: calc(0.7em + 1vw);
+
+	
+}
+.logoheart img{
+width: 100%;
+height: 100%;
+
+
+}
+
+
+
+
+
+
+.Carrito{
+	position: absolute;
+	/*nos posicionamos en el centro del navegador*/
+	top:50%;
+	left:50%;
+	/*determinamos una anchura*/
+	width:500px;
+	/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+	margin-left:-10px;
+	/*determinamos una altura*/
+	height:300px;
+	/*indicamos que el margen superior, es la mitad de la altura*/
+	margin-top:-150px;
+	padding:5px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: calc(0.7em + 1vw);
+}
+input[type="submit"] {
+
+	background-color: #ff008b;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+}
+.Container_cart{
+
+	position: absolute;
+	/*nos posicionamos en el centro del navegador*/
+	top:50%;
+	left:50%;
+	/*determinamos una anchura*/
+	width:400px;
+	/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+	margin-left:-200px;
+	/*determinamos una altura*/
+	height:300px;
+	/*indicamos que el margen superior, es la mitad de la altura*/
+	margin-top:-150px;
+	padding:5px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	
+
+}
+.Container_cart h3{
+	margin-top:50%;
+	font-size: calc(1em + 1vw);
+}
+
+tbody{
+    
+    
+}
+table{
+   border: 1px solid black;
+   width: 100%;
+   text-align: center;
+}
+.borrar{
+    
+}
+input[type="number"] {
+	outline: none;
+	-moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+/*ESTILO INPUT CANTIDAD*/
+.box{
+	position: absolute;
+	width: 25px;
+	transform: translate(-50%,-50%);
+}
+.cantidad {
+	border:none;
+	outline: none;
+	padding: 5px;
+	margin: 0 5px !important;
+	border-radius: 5px;
+	box-shadow: 0 2px 5ox rgba(0, 0, 0, .5);
+
+}
+
+
+
+.cantidad:hover,
+.cantidad:focus{
+	background: #ff008b;
+	color: #fff;
+}
+
+button{
+	background:black;
+	color: #fff;
+	outline: none;
+	border:none;
+	padding: 0 10px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5ox rgba(0, 0, 0, .5);
+
+}
+
+button:hover{
+	background: #ff008b;
+
+}
+.pagar{
+	top:10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+	.Carrito{
+		
+		position: absolute;
+		/*nos posicionamos en el centro del navegador*/
+		top:50%;
+		left:50%;
+		/*determinamos una anchura*/
+		width:98%;
+		/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+		margin-left:-50%;
+		/*determinamos una altura*/
+		height:300px;
+		/*indicamos que el margen superior, es la mitad de la altura*/
+		margin-top:-100px;
+	/*	padding:5px;*/
+		text-align: center;
+		font-family: 'Open Sans', sans-serif;
+		font-size: calc(0.7em + 1vw);
+	}
+	.logoheart{
+		opacity: 0.2;
+		position: absolute;
+		top: 50%;
+		float: left;
+		width: 98%;
+		margin-left: -10px;
+		height: 300px;
+		margin-top: -100px;
+		/*padding: 5px;*/
+		text-align: center;
+		font-family: 'Open Sans', sans-serif;
+		font-size: calc(0.7em + 1vw);
+	
+		
+	}
+
+}

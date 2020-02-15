@@ -1,0 +1,353 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+
+/*contado de articulos en carrito*/
+#cont{
+	font-size: 12px;
+	transition: all 0.5s ease;
+}
+#cont:hover{
+	color: #F28705;
+}
+.fa-stack {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2.5em;
+}
+.fa-stack2 {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    position: relative;
+    vertical-align: middle;
+    width: 2.5em;
+}
+
+.fa-stack[data-count]:after {
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	content: attr(data-count);
+	font-size: 40%;
+	padding: 0.6em;
+	border-radius: 999px;
+	line-height: 0.75em;
+	color: #F20574;
+	background: #F20574;;
+	text-align: center;
+	min-width: 1em;
+	font-weight: bold;
+	background: white;
+	border-style: solid;
+  }
+  .fa-stack2[data-count]:after {
+	display: none;
+	position: relative;
+	right: 0%;
+	top: 0%;
+	content: attr(data-count);
+	font-size: 40%;
+	padding: 0.6em;
+	border-radius: 999px;
+	line-height: 0.75em;
+	color: #F20574;
+	background: #F20574;;
+	text-align: center;
+	min-width: 1em;
+	font-weight: bold;
+	background: white;
+	border-style: solid;
+  }
+  .fa-stack[data-count]:hover{
+	color: #F28705;
+  }
+
+  .red-cart {
+	color: #F20574;
+	transition: all 0.5s ease;
+	
+  }
+  .red-cart:hover {
+	color: #F28705;
+	
+  }
+  
+ /* fin contador */
+#respa{
+
+	font-family: "Lato", sans-serif;
+
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+}
+h3 a {
+	color: #FFF;
+}
+
+a {
+	color: #FFF;
+}
+
+#logo img{
+    width: 80%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav { 
+	margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    left: 0;
+	top: 53px;
+    position: fixed;
+    font-size: 22px;
+    line-height: 32px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word !important;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 999;}
+
+#logo {
+	display: block;
+    /* padding: 0 30px; */
+    float: left;
+    font-size: 20px;
+    line-height: 60px;
+    width: 100px;
+    height: 100%;
+
+}
+
+.logo {
+	width: 80%;
+    height: 90%;
+	position: relative;
+	padding: 0;
+}
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+   
+    padding: 0;
+    list-style: none;
+    position: relative;
+
+	
+	}
+	
+/* Positioning the navigation items inline */
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+    background-color: white;
+	
+	}
+
+/* Styling the links */
+nav a {
+	display: block;
+    padding: 14px 20px;
+    color: #F20574;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+
+nav ul li ul li:hover {color: #F28705; }
+
+/* Background color change on Hover */
+nav a:hover { 
+	color: #F28705; 
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px; 
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+	left:170px; 
+}
+
+	
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 900px) {
+
+	#logo {
+		display: block;
+		padding: 0 30px;
+		float: left;
+		font-size: 20px;
+		line-height: 60px;
+		width: 100px;
+		height: 54px;
+		box-sizing: unset;
+
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	/* Hide the navigation menu by default */
+	/* Also hide the  */
+	.toggle + a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		background-color: white;
+		padding:4px 20px;	
+		color:#F20574;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+	}
+
+	.toggle:hover {
+		color: #F28705;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked + ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+		}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+	}
+
+	nav a:hover,
+ 	nav ul ul ul a {
+		color: #F28705;
+	}
+  
+	nav ul li ul li .toggle,
+	nav ul ul a,
+  nav ul ul ul a{
+		padding:2px 20px;	
+		color:#F20574;
+		font-size:3vw; 
+	}
+  
+  
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: white;
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position:static;
+		color: #F20574;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+		
+	/* Hide menus on hover */
+	nav ul ul li:hover > ul,
+	nav ul li:hover > ul {
+		display: none;
+	}
+		
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 166%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display:block;
+		width: 94%;
+	}
+
+}
